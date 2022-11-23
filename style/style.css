@@ -1,0 +1,361 @@
+/* @import 'font.css'; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat-Regular';
+}
+
+body {
+    background: #151515;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__nav {
+    background: #282828;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 6px 0;
+}
+
+.header__nav-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Montserrat-Bold';
+    color: #FFFFFF;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header__nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__content {
+    background: url(../images/Header.png) no-repeat;
+    background-size: 100%;
+    min-height: 700px;
+}
+
+.header__content-box,
+.header__content-info {
+    min-height: inherit;
+}
+
+.header__content-title {
+    font-family: 'ProstoOne';
+    font-size: 100px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.header__content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.logo {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Medium';
+    color: #171718;
+
+}
+
+.header__btn {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 13px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__btn a:nth-of-type(2) {
+    height: 15px;
+}
+
+/* main */
+
+.main__contant-desc {
+    font-size: 22px;
+    line-height: 27px;
+    font-family: 'Montserrat-Medium';
+    color: #FFFFFF;
+
+}
+
+.main__contant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.main__block {
+    margin-top: 30px;
+}
+
+.main__contant:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.main__contant:nth-of-type(3) {
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.main__contant-img {
+    max-width: 268px;
+    width: 100%;
+    position: relative;
+}
+
+.main__contant-img::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #C4C4C4;
+    left: -75px;
+    top: 50%;
+}
+
+.main__contant-img::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #C4C4C4;
+    right: -75px;
+    top: 50%;
+}
+
+
+
+.main__contant:nth-of-type(3) .main__contant-desc {
+    max-width: 330px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main__contant:nth-of-type(3) .main__contant-desc:first-child {
+    text-align: right;
+    font-family: 'Montserrat-Bold';
+}
+
+.main__contant:nth-of-type(3) .main__contant-desc:last-child {
+    /* max-width: 329px; */
+    /* width: 100%; */
+    font-family: 'Montserrat-Bold';
+}
+
+.main__contant_card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 47px;
+    gap: 10px;
+}
+
+.card__title {
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+    font-family: 'Montserrat-Bold';
+
+}
+
+.card__prise {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.card__btn {
+    background: #151515;
+    padding: 7px 57px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main__contant_cards {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+main {
+    padding-bottom: 55px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer {
+    background: #282828;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
+    padding: 80px 0;
+}
+
+.footer_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer__link {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Bold';
+}
+
+
+/* Media start */
+
+@media (max-width: 1110px) {
+    .main__contant_cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__content-title {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 950px) {
+    .main__contant {
+        flex-direction: column !important;
+        margin-bottom: 50px;
+        gap: 40px;
+
+    }
+
+    .main__contant:nth-of-type(3) .main__contant-desc:first-child {
+        text-align: center;
+    }
+
+    .main__contant-img::before,
+    .main__contant-img::after {
+        display: none;
+
+    }
+
+    .header__content {
+        min-height: 500px;
+    }
+
+    .main__contant-desc {
+        max-width: 550px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer__content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+
+    }
+
+    .main__contant-img>img,
+    .main__contant>img {
+        width: 100%;
+    }
+
+    .main__contant:nth-of-type(2) {
+        max-width: 457px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main__contant:nth-of-type(1) {
+        max-width: 457px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header__nav-content {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+
+    }
+
+    .header__content-title {
+        font-size: 55px;
+
+    }
+
+    .header__btn {
+        padding: 5px 8px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main__contant-desc {
+        font-size: 18px
+    }
+    .header__content-title {
+        font-size: 40px;
+    }
+}
+
+/* Media end */
